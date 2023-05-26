@@ -10,7 +10,6 @@ function App() {
     <>
     
       <Router>
-        <div className="flex-column justify-center align-center min-100-vh bg-primary">
           <>
           <Routes>
             <Route path="/" element={<Neon />} />
@@ -18,7 +17,7 @@ function App() {
 
           </Routes>
           </>
-        </div>
+       
       </Router>
   </>
   );
