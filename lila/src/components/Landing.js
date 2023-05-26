@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "./navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Modal from 'react-bootstrap/Modal';
 import Carousel from "react-bootstrap/Carousel";
-import CarouselItem from "./CarouselItem";
 
 export default function Neon() {
   // this array contains all of the images for this page, as well as key properties for sorting in an array assembly
@@ -40,29 +40,45 @@ export default function Neon() {
     {
       url: "./images/neon/Tug of War 1.jpeg",
       key: 7,
-    }
+    },
   ];
-  let slideList = [];
+  const [slideList, setSlideList] = React.useState([]);
   const makeList = (key) => {
-    slideList.length = 0;
-    slideList = options.slice(key).concat(options.slice(0, key));
-    console.log(slideList);
+    setSlideList(options.slice(key).concat(options.slice(0, key)));
+    handleShowCarousel();
   };
+
+  const [showCarousel, setShowCarousel] = useState(false);
+
+  const handleCloseCarousel = () => setShowCarousel(false);
+  const handleShowCarousel = () => setShowCarousel(true);
+
+  const carousel = (
+    <>
+      <Modal size="lg" show={showCarousel} onHide={handleCloseCarousel}>
+        <Modal.Body>
+          <Carousel
+            variant="dark"
+            interval={null}
+            style={{height: "95vh"}}
+          >
+            {slideList.map((data) => {
+              return <Carousel.Item>
+              <img
+                src={data.url} className="d-block" style={{height: "80vh", marginLeft: "auto", marginRight: "auto"}} alt={data.key}
+              />
+            </Carousel.Item>;
+            })}
+          </Carousel>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
 
   return (
     <>
       <Navigation />
-      <Carousel
-        variant="dark"
-        interval={null}
-        style={{
-          width: "60%",
-        }}
-      >
-        {slideList.map((data) => {
-          return <CarouselItem url={data.url} key={data.key} />;
-        })}
-      </Carousel>
+      {carousel}
       <div class="container">
         <div class="heading">
           <div class="box">
