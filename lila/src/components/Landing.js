@@ -43,19 +43,10 @@ export default function Neon() {
     }
   ];
   let slideList = [];
-  let remainder = [];
   const makeList = (key) => {
-    for (let i = 0; i < options.length; i++) {
-        if (key+i <= 7) {
-            slideList.push(options[key+i]);
-        }
-    }
-    remainder = options;
-    for (let x = 0; x < slideList.length; x++) {
-        remainder.pop(slideList[x].key)
-    }
+    slideList.length = 0;
+    slideList = options.slice(key).concat(options.slice(0, key));
     console.log(slideList);
-    console.log(remainder);
   };
 
   return (
@@ -87,7 +78,7 @@ export default function Neon() {
                     </a>
                   </Col>
                   <Col className="my-5">
-                    <a key={1} onClick={() => makeList(1)}>
+                    <a href="#" key={1} onClick={() => makeList(1)}>
                       <img
                         src="./images/neon/Blue Pool Oyster 1.JPG"
                         style={{ width: "400px" }}
@@ -97,7 +88,7 @@ export default function Neon() {
                 </Row>
                 <Row style={{ textAlign: "center" }}>
                   <Col className="my-5 mx-2">
-                    <a key={2} onClick={() => makeList(2)}>
+                    <a href="#" key={2} onClick={() => makeList(2)}>
                       <img
                         src="./images/neon/Oyster 1.JPG"
                         style={{ width: "400px" }}
@@ -105,7 +96,7 @@ export default function Neon() {
                     </a>
                   </Col>
                   <Col className="my-5 mx-2">
-                    <a key={3} onClick={() => makeList(3)}>
+                    <a href="#" key={3} onClick={() => makeList(3)}>
                       <img
                         src="./images/neon/Oyster 2.JPG"
                         style={{ width: "400px" }}
@@ -115,7 +106,7 @@ export default function Neon() {
                 </Row>
                 <Row style={{ textAlign: "center" }}>
                   <Col className="my-5 mx-2">
-                    <a key={4} onClick={() => makeList(4)}>
+                    <a href="#" key={4} onClick={() => makeList(4)}>
                       <img
                         src="./images/neon/Seed to Seedling.JPG"
                         style={{ width: "400px" }}
@@ -123,7 +114,7 @@ export default function Neon() {
                     </a>
                   </Col>
                   <Col className="my-5 mx-2">
-                    <a key={5} onClick={() => makeList(5)}>
+                    <a href="#" key={5} onClick={() => makeList(5)}>
                       <img
                         src="./images/neon/Shell 1.5.JPG"
                         style={{ width: "400px" }}
@@ -133,7 +124,7 @@ export default function Neon() {
                 </Row>
                 <Row style={{ textAlign: "center" }}>
                   <Col className="my-5 mx-2">
-                    <a key={6} onClick={() => makeList(6)}>
+                    <a href="#" key={6} onClick={() => makeList(6)}>
                       <img
                         src="./images/neon/Shell 2 and 3.JPG"
                         style={{ width: "400px" }}
@@ -141,7 +132,7 @@ export default function Neon() {
                     </a>
                   </Col>
                   <Col className="my-5">
-                    <a key={7} onClick={() => makeList(7)}>
+                    <a href="#" key={7} onClick={() => makeList(7)}>
                       <img
                         src="./images/neon/Tug of War 1.jpeg"
                         style={{ width: "400px" }}
