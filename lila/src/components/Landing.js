@@ -3,7 +3,7 @@ import Navigation from "./navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Modal from 'react-bootstrap/Modal';
+import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 
 export default function Neon() {
@@ -41,6 +41,10 @@ export default function Neon() {
       url: "./images/neon/Tug of War 1.jpeg",
       key: 7,
     },
+    {
+      url: "./images/neon/Shell 1.JPG",
+      key: 8,
+    }
   ];
   const [slideList, setSlideList] = React.useState([]);
   const makeList = (key) => {
@@ -57,17 +61,22 @@ export default function Neon() {
     <>
       <Modal size="lg" show={showCarousel} onHide={handleCloseCarousel}>
         <Modal.Body>
-          <Carousel
-            variant="dark"
-            interval={null}
-            style={{height: "95vh"}}
-          >
+          <Carousel variant="dark" interval={null} style={{ height: "95vh" }}>
             {slideList.map((data) => {
-              return <Carousel.Item>
-              <img
-                src={data.url} className="d-block" style={{height: "80vh", marginLeft: "auto", marginRight: "auto"}} alt={data.key}
-              />
-            </Carousel.Item>;
+              return (
+                <Carousel.Item>
+                  <img
+                    src={data.url}
+                    className="d-block"
+                    style={{
+                      height: "80vh",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                    }}
+                    alt={data.key}
+                  />
+                </Carousel.Item>
+              );
             })}
           </Carousel>
         </Modal.Body>
@@ -88,70 +97,77 @@ export default function Neon() {
                   <Col className="my-5 mx-2">
                     <a href="#" key={0} onClick={() => makeList(0)}>
                       <img
-                        src="./images/neon/Evil eye.jpeg"
-                        style={{ width: "400px" }}
+                        src={options[0].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
                   <Col className="my-5">
                     <a href="#" key={1} onClick={() => makeList(1)}>
                       <img
-                        src="./images/neon/Blue Pool Oyster 1.JPG"
-                        style={{ width: "400px" }}
+                        src={options[1].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
-                </Row>
-                <Row style={{ textAlign: "center" }}>
                   <Col className="my-5 mx-2">
                     <a href="#" key={2} onClick={() => makeList(2)}>
                       <img
-                        src="./images/neon/Oyster 1.JPG"
-                        style={{ width: "400px" }}
+                        src={options[2].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
+                </Row>
+
+                <Row style={{ textAlign: "center" }}>
                   <Col className="my-5 mx-2">
                     <a href="#" key={3} onClick={() => makeList(3)}>
                       <img
-                        src="./images/neon/Oyster 2.JPG"
-                        style={{ width: "400px" }}
+                        src={options[3].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
-                </Row>
-                <Row style={{ textAlign: "center" }}>
-                  <Col className="my-5 mx-2">
+                  <Col className="my-3 mx-2">
                     <a href="#" key={4} onClick={() => makeList(4)}>
                       <img
-                        src="./images/neon/Seed to Seedling.JPG"
-                        style={{ width: "400px" }}
+                        src={options[4].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
-                  <Col className="my-5 mx-2">
+                  <Col className="my-3 mx-2">
                     <a href="#" key={5} onClick={() => makeList(5)}>
                       <img
-                        src="./images/neon/Shell 1.5.JPG"
-                        style={{ width: "400px" }}
+                        src={options[5].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
                 </Row>
                 <Row style={{ textAlign: "center" }}>
-                  <Col className="my-5 mx-2">
+                  <Col className="my-3 mx-2">
                     <a href="#" key={6} onClick={() => makeList(6)}>
                       <img
-                        src="./images/neon/Shell 2 and 3.JPG"
-                        style={{ width: "400px" }}
+                        src={options[6].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
                   <Col className="my-5">
                     <a href="#" key={7} onClick={() => makeList(7)}>
                       <img
-                        src="./images/neon/Tug of War 1.jpeg"
-                        style={{ width: "400px" }}
+                        src={options[7].url}
+                        style={{ width: "20vw" }}
+                      />
+                    </a>
+                  </Col>
+                  <Col className="my-5">
+                    <a href="#" key={8} onClick={() => makeList(8)}>
+                      <img
+                        src={options[8].url}
+                        style={{ width: "20vw" }}
                       />
                     </a>
                   </Col>
