@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lilawestreich/static/css/main.174f8b15.css",
+    "main.js": "/lilawestreich/static/js/main.176f471e.js",
+    "static/js/787.cb183f8d.chunk.js": "/lilawestreich/static/js/787.cb183f8d.chunk.js",
+    "index.html": "/lilawestreich/index.html",
+    "main.174f8b15.css.map": "/lilawestreich/static/css/main.174f8b15.css.map",
+    "main.176f471e.js.map": "/lilawestreich/static/js/main.176f471e.js.map",
+    "787.cb183f8d.chunk.js.map": "/lilawestreich/static/js/787.cb183f8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.174f8b15.css",
+    "static/js/main.176f471e.js"
+  ]
+}
