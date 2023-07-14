@@ -98,7 +98,7 @@ export default function Neon() {
                     <a href="#" key={0} onClick={() => makeList(0)}>
                       <img
                         src={options[0].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
@@ -106,7 +106,7 @@ export default function Neon() {
                     <a href="#" key={1} onClick={() => makeList(1)}>
                       <img
                         src={options[1].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
@@ -114,44 +114,39 @@ export default function Neon() {
                     <a href="#" key={2} onClick={() => makeList(2)}>
                       <img
                         src={options[2].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
-                </Row>
-
-                <Row style={{ textAlign: "center" }}>
                   <Col className="my-5 mx-2">
                     <a href="#" key={3} onClick={() => makeList(3)}>
                       <img
                         src={options[3].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
-                  <Col className="my-3 mx-2">
+                  <Col className="my-5 mx-2">
                     <a href="#" key={4} onClick={() => makeList(4)}>
                       <img
                         src={options[4].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
-                  <Col className="my-3 mx-2">
+                  <Col className="my-5 mx-2">
                     <a href="#" key={5} onClick={() => makeList(5)}>
                       <img
                         src={options[5].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
-                </Row>
-                <Row style={{ textAlign: "center" }}>
-                  <Col className="my-3 mx-2">
+                  <Col className="my-5 mx-2">
                     <a href="#" key={6} onClick={() => makeList(6)}>
                       <img
                         src={options[6].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
@@ -159,7 +154,7 @@ export default function Neon() {
                     <a href="#" key={7} onClick={() => makeList(7)}>
                       <img
                         src={options[7].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
@@ -167,7 +162,7 @@ export default function Neon() {
                     <a href="#" key={8} onClick={() => makeList(8)}>
                       <img
                         src={options[8].url}
-                        style={{ width: "20vw" }}
+                        style={{ width: "300px" }}
                       />
                     </a>
                   </Col>
