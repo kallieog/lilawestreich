@@ -13,7 +13,7 @@ export default function Flameworking() {
       key: 0,
     },
     {
-      url: "./images/flameworking/Seed 6 v2.jpeg",
+      url: "./images/flameworking/squirly.jpeg",
       key: 1,
     },
     {
@@ -43,6 +43,18 @@ export default function Flameworking() {
     {
       url: "./images/flameworking/Seed4_mixed.JPG",
       key: 8,
+    },
+    {
+      url: "./images/flameworking/Seed 5.JPG.jpeg",
+      key: 9,
+    },
+    {
+      url: "./images/flameworking/Seed 1.JPG.jpeg",
+      key: 10,
+    },
+    {
+      url: "./images/flameworking/squirly2.jpeg",
+      key: 11,
     },
   ];
   const [slideList, setSlideList] = React.useState([]);
@@ -163,6 +175,31 @@ export default function Flameworking() {
                     <a href="#" key={8} onClick={() => makeList(8)}>
                       <img 
                         src={options[8].url}
+                        style={{ width: "20vw" }} 
+                      />
+                    </a>
+                  </Col>
+                </Row>
+                <Row style={{ textAlign: "center" }}>
+                  <a href="#" key={9} onClick={() => makeList(9)}></a>
+                  <Col className="my-5 mx-2">
+                    <img
+                      src={options[9].url}
+                      style={{ width: "20vw" }}
+                    />
+                  </Col>
+                  <Col className="my-5 mx-2">
+                    <a href="#" key={10} onClick={() => makeList(10)}>
+                      <img
+                        src={options[10].url}
+                        style={{ width: "20vw" }}
+                      />
+                    </a>
+                  </Col>
+                  <Col className="my-5 mx-2">
+                    <a href="#" key={11} onClick={() => makeList(11)}>
+                      <img 
+                        src={options[11].url}
                         style={{ width: "20vw" }} 
                       />
                     </a>

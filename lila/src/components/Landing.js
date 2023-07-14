@@ -10,7 +10,7 @@ export default function Neon() {
   // this array contains all of the images for this page, as well as key properties for sorting in an array assembly
   const options = [
     {
-      url: "./images/neon/Evil eye.jpeg",
+      url: "./images/neon/Blue Pool Oyster 2.JPG.jpeg",
       key: 0,
     },
     {
@@ -18,7 +18,7 @@ export default function Neon() {
       key: 1,
     },
     {
-      url: "./images/neon/Oyster 1.JPG",
+      url: "./images/neon/Evil Eye.jpeg",
       key: 2,
     },
     {
@@ -26,7 +26,7 @@ export default function Neon() {
       key: 3,
     },
     {
-      url: "./images/neon/Seed to Seedling.JPG",
+      url: "./images/neon/Shell 2.JPG.jpeg",
       key: 4,
     },
     {
@@ -38,11 +38,11 @@ export default function Neon() {
       key: 6,
     },
     {
-      url: "./images/neon/Tug of War 1.jpeg",
+      url: "./images/neon/Tug of War 2.jpeg",
       key: 7,
     },
     {
-      url: "./images/neon/Shell 1.JPG",
+      url: "./images/neon/Tug of War 1.jpeg",
       key: 8,
     }
   ];

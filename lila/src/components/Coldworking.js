@@ -14,7 +14,7 @@ export default function Coldworking() {
       key: 0,
     },
     {
-      url: "./images/coldworking/IMG_9616",
+      url: "./images/coldworking/IMG_9616.jpeg",
       key: 1,
     },
     {
@@ -130,32 +130,6 @@ export default function Coldworking() {
                     <a href="#" key={5} onClick={() => makeList(5)}>
                       <img
                         src={options[5].url}
-                        style={{ width: "20vw" }}
-                      />
-                    </a>
-                  </Col>
-                </Row>
-                <Row style={{ textAlign: "center" }}>
-                  <Col className="my-3 mx-2">
-                    <a href="#" key={6} onClick={() => makeList(6)}>
-                      <img
-                        src={options[6].url}
-                        style={{ width: "20vw" }}
-                      />
-                    </a>
-                  </Col>
-                  <Col className="my-5">
-                    <a href="#" key={7} onClick={() => makeList(7)}>
-                      <img
-                        src={options[7].url}
-                        style={{ width: "20vw" }}
-                      />
-                    </a>
-                  </Col>
-                  <Col className="my-5">
-                    <a href="#" key={8} onClick={() => makeList(8)}>
-                      <img
-                        src={options[8].url}
                         style={{ width: "20vw" }}
                       />
                     </a>
